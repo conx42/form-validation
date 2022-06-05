@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./formInput.css";
 import RemoveRedEyeOutlinedIcon from "@mui/icons-material/RemoveRedEyeOutlined";
 import VisibilityOffOutlinedIcon from "@mui/icons-material/VisibilityOffOutlined";
-import PasswordIcon from "@mui/icons-material/Password";
 
 const FormInput = (props) => {
   /**
