@@ -20,7 +20,8 @@ const App = () => {
         "Username should be 3-16 characters and shouldn't include any special character!",
       label: "Username",
       pattern: "^[A-Za-z0-9]{3,16}$",
-      required: true,//HTML Attribute
+      required: true,//HTML Attribute,
+      icon: false
     },
     {
       id: 2,
@@ -30,6 +31,7 @@ const App = () => {
       errorMessage: "It should be a valid email address!",
       label: "Email",
       required: true,//HTML Attribute
+      icon: false
     },
     {
       id: 3,
@@ -38,6 +40,7 @@ const App = () => {
       placeholder: "Birthday",
       errorMessage: "",
       label: "Birthday",
+      icon: false
     },
     {
       id: 4,
@@ -50,6 +53,7 @@ const App = () => {
       autoComplete: "off",
       pattern: `^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,20}$`,
       required: true,//HTML Attribute
+      icon: true,
     },
     {
       id: 5,
@@ -60,7 +64,8 @@ const App = () => {
       label: "Confirm Password",
       autoComplete: "off",
       pattern: values.password,
-      required: true,//HTML Attribute
+      required: true,//HTML Attribute,
+      icon: false,
     },
   ];
   const handleSubmit = (e) => {
@@ -73,7 +78,7 @@ const App = () => {
   console.log(values.birthday);
   return (
     <div className="App">
-      <form onSubmit={handleSubmit}>
+      <form action="#" onSubmit={handleSubmit}>
         <h1>Register</h1>
         {inputs.map((input) => {
           return (

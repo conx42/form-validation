@@ -22,7 +22,7 @@ span {
   color: red;
   display: none;
 }
-input:invalid[focused="true"]{
+input:invalid[focused="true"] {
   border: 1px solid red;
 }
 input:invalid[focused="true"] ~ span {
@@ -30,3 +30,18 @@ input:invalid[focused="true"] ~ span {
   display: block;
 }
 
+.lebu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+i#i-eye {
+  color: #7a797e;
+  margin-bottom: -5.6rem;
+  z-index: 99999;
+  margin-right: 0.2rem;
+}
+i#i-eye:hover {
+  cursor: pointer;
+  /* color: 	yellow; */
+}
